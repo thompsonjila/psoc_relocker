@@ -1,3 +1,4 @@
+#! C:\ProgramData\Anaconda3\python.exe
 # -*- coding: utf-8 -*-
 """
 Created on Sun Aug 11 16:41:36 2019
@@ -55,6 +56,7 @@ class App:
         self.img_exit = PhotoImage(file='exit.png')
         self.img_settings = PhotoImage(file='settings.png')
         self.img_info = PhotoImage(file='info.png')
+        self.img_plot = PhotoImage(file='info.png')
         self.img_reload = PhotoImage(file='reload.png')
         self.img_logo = PhotoImage(file='salamander.png')
         self.img_logo2 = PhotoImage(file='salamander2.png')
@@ -72,11 +74,12 @@ class App:
         self.master.bind_all("<Control-w>", self.master.destroy)
         self.var_reload_plot = tk.BooleanVar()
         self.menu2.add_checkbutton(label=" Reload plot automatically", onvalue=True, offvalue=False, variable=self.var_reload_plot)
+        self.menu3.add_command(label=" Plot last error trace", state="disabled", command=self.scan_serial_ports, image=self.img_plot, compound='left')
         self.menu3.add_command(label=" Rescan COM ports", command=self.scan_serial_ports, image=self.img_reload, compound='left')
         self.menu4.add_command(label=" About", command=self.about, image=self.img_info, compound='left')
         self.menu.add_cascade(label="File", menu=self.menu1)
         self.menu.add_cascade(label="Settings", menu=self.menu2)
-        self.menu.add_cascade(label="COM", menu=self.menu3)
+        self.menu.add_cascade(label="Commands", menu=self.menu3)
         self.menu.add_cascade(label="Help", menu=self.menu4)
         
         
@@ -93,15 +96,15 @@ class App:
             print(self.window)
       
         self.button_connect = tk.Button(self.master, text="Connect COM", command=self.connect)
-        self.button_disconnect = tk.Button(self.master, text="Disconnect COM", state='disabled', command=self.disconnect)
-        #self.button_rescan = tk.Button(self.master, text="Rescan ports", command=self.scan_serial_ports)
-        self.button_rescan = tk.Button(self.master, text="Rescan ports", command=test)
+        self.button_disconnect = tk.Button(self.master, text="Disconnect COM", state="disabled", command=self.disconnect)
+        self.button_rescan = tk.Button(self.master, text="Rescan ports", command=self.scan_serial_ports)
+        #self.button_rescan = tk.Button(self.master, text="Rescan ports", command=test)
         
         self.button_connect.grid(row=0, column=1, rowspan=2, padx=5, pady=5, sticky=tk.W)
         self.button_disconnect.grid(row=2, column=1, rowspan=2, padx=5, pady=5, sticky=tk.W)
         self.button_rescan.grid(row=4, column=1, rowspan=2, padx=5, pady=5, sticky=tk.W)
       
-        self.button_plot = tk.Button(self.master, text="Plot last error signal", state="normal", image=self.img_logo2, compound='top', command=self.create_plot_window)
+        self.button_plot = tk.Button(self.master, text="Plot last error signal", state="disabled", image=self.img_logo2, compound='top', command=self.create_plot_window)
         self.button_plot.grid(row=0, rowspan=6, column=2, padx=45, pady=10, sticky=tk.N + tk.E + tk.W + tk.S)
        
         tk.Grid.columnconfigure(self.master, 2, weight=1)
@@ -196,11 +199,11 @@ class App:
         print(string1 + "  " + str(string2), end=endstr)
         self.write_to_log(string1 + "  " + str(string2), format=format)
       
-    def warn(self, string, endstr=''):
+    def warn(self, string, endstr='', format='warning'):
         timestr = time.strftime("%m/%d %H:%M:%S %p", time.localtime()) + "  "
         timestr = ("  " + timestr[1:] if timestr.startswith('0') else timestr).replace(" 0", "  ")
         print(timestr + str(string), end=endstr)
-        self.write_to_log(timestr + str(string), format='warning')
+        self.write_to_log(timestr + str(string), format=format)
       
     def scan_serial_ports(self):
          # list of all serial ports: [(port number, description, hardware address)]
@@ -218,6 +221,7 @@ class App:
             self.button_connect.config(state="disabled")
             self.button_rescan.config(state="normal")
         else:
+            self.button_connect.config(state="normal")
             counter = 0
             for (port, desc) in ports:
                 self.p2("  Connected Ports", port + ": " + desc, format='')
@@ -250,7 +254,7 @@ class App:
                   pass
                 log_message = True
                 if ('Fail' in line) or ('Warning' in line):
-                  self.warn(line, format='warning') # fail, warning, etc.
+                  self.warn(line) # fail, warning, etc.
                 elif 'SKYNET' in line:
                   self.p2("", "")
                   self.p2("Relocker rebooted", line, format='info') # fail, warning, etc.
@@ -292,7 +296,9 @@ class App:
                       self.pltdata = parsed_line.group(4)
                       self.plttime = time.strftime("%m/%d %H:%M:%S %p", time.localtime())
                       print("Stored new error monitor trace.")
-                      print(parsed_line.groups())
+                      self.menu3.entryconfig(" Plot last error trace", state="normal")
+                      self.button_plot.config(state="normal")
+                      # print(parsed_line.groups())
                       log_message = False
                       if (self.var_reload_plot.get() and hasattr(self, "graph")):
                           self.graph.update_graph(self.pltdata, self.plttime, self.thresh1, self.thresh2, self.num_pts)
@@ -301,7 +307,7 @@ class App:
                   if log_message:
                     self.p(line, endstr='')    # normal message
                     
-          self.master.after(0, self.read_serial)
+          self.master.after(1, self.read_serial)
         
   
     def about(self):
@@ -324,7 +330,7 @@ class App:
                 self.button_disconnect.config(state="normal")
                 self.button_rescan.config(state='disabled')
                 self.p("Connected to " + com_port_input + ". Now listening for serial messages.")
-                self.master.after(0, self.read_serial)
+                self.master.after(1, self.read_serial)
             except serial.serialutil.SerialException:
                 self.warn("Could not open port '" + str(com_port_input) + "'")
                 self.ser = False
@@ -364,8 +370,8 @@ class Graph():
         self.master = master
         self.plot_err_mon(pltdata, plttime, thresh1, thresh2, num_pts)
       
-    def __del__(self):
-        self.master.destroy()
+    #def __del__(self):
+    #    self.master.destroy()
         
     def quit(self):
         self.master.destroy()
@@ -375,7 +381,7 @@ class Graph():
         data_bin = binascii.unhexlify(pltdata)
         int_values = struct.iter_unpack(">H", data_bin)
         vals = np.trim_zeros([x[0] for x in int_values])
-      #  print(vals)
+        print(len(vals))
         vals = vals[stop_counter+1:] + vals[0:stop_counter+1]
         w1 = TL.Wave(vals, name="Error monitor V [arb]")
         t1 = TL.Trace(w1, ls='-', marker=None)
@@ -417,10 +423,11 @@ class Graph():
         for c in self.axes_object.get_lines():
             c.remove()
             
-        self.plot_object.plot((0, len(w1)), (random.randint(1700, 2200), random.randint(1700, 2200)))
+        self.plot_object.plot((0, len(w1)), (int(thresh1), int(thresh1)), color="#333350")
+        self.plot_object.plot((0, len(w1)), (int(thresh2), int(thresh2)), color="#333350")
         self.plot_object.title("Relocker error monitor trace\n" + plttime)
-        self.plot_object.xlabel("Last " + str(random.randint(0, 10) + len(w1)) + " points")
-        self.plot_object.plot(w1)
+        self.plot_object.xlabel("Last " + str(len(w1)) + " points")
+        self.plot_object.plot(w1, color="#33aa77")
         self.canvas.draw()
 
         
