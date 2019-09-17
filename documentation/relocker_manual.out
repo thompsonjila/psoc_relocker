@@ -1,0 +1,31 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Operation Guide}{}% 2
+\BOOKMARK [1][-]{section*.2}{Initial Setup Procedure}{chapter.2}% 3
+\BOOKMARK [1][-]{section*.3}{Front Panel LEDs}{chapter.2}% 4
+\BOOKMARK [0][-]{chapter.3}{Basic Relocking Mechanism}{}% 5
+\BOOKMARK [1][-]{section*.4}{System Structure}{chapter.3}% 6
+\BOOKMARK [1][-]{section*.5}{The Re-stabilization Procedure}{chapter.3}% 7
+\BOOKMARK [2][-]{subsection*.6}{The Basic Process}{section*.5}% 8
+\BOOKMARK [2][-]{subsection*.7}{Underlying \(Threshold\) Mechanics}{section*.5}% 9
+\BOOKMARK [0][-]{chapter.4}{Relocking System Structure}{}% 10
+\BOOKMARK [1][-]{section*.8}{External Box Connections}{chapter.4}% 11
+\BOOKMARK [1][-]{section*.9}{Internal Box Connections}{chapter.4}% 12
+\BOOKMARK [2][-]{subsection*.10}{Control Panel Modules}{section*.9}% 13
+\BOOKMARK [2][-]{subsection*.11}{Level Shifters}{section*.9}% 14
+\BOOKMARK [2][-]{subsection*.15}{Buffer Amplifiers}{section*.9}% 15
+\BOOKMARK [2][-]{subsection*.16}{Loop Filter Input Switches}{section*.9}% 16
+\BOOKMARK [2][-]{subsection*.17}{``Triggered'' Relocking \(Block Lock TTL\)}{section*.9}% 17
+\BOOKMARK [0][-]{chapter.5}{Relocker Algorithm}{}% 18
+\BOOKMARK [1][-]{section*.18}{Calculating Voltage Sweep Bounds}{chapter.5}% 19
+\BOOKMARK [1][-]{section*.19}{The Code}{chapter.5}% 20
+\BOOKMARK [1][-]{section*.20}{Calibrating the Voltage Sweeps}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Known Issues and Future Work}{}% 22
+\BOOKMARK [1][-]{section*.21}{Cleaning up the Error Signal}{chapter.6}% 23
+\BOOKMARK [1][-]{section*.22}{Offsetting the Center of the Voltage Sweep}{chapter.6}% 24
+\BOOKMARK [1][-]{section*.23}{Slowing Down the Relocking Sweep}{chapter.6}% 25
+\BOOKMARK [0][-]{chapter.7}{Serial Communication}{}% 26
+\BOOKMARK [1][-]{section*.24}{Serial Communications Server}{chapter.7}% 27
+\BOOKMARK [0][-]{chapter.8}{Printed Circuit Board}{}% 28
+\BOOKMARK [0][-]{section*.28}{Appendices}{}% 29
+\BOOKMARK [1][-]{section*.29}{Pictures of the Relocker Box, as of June 15, 2018}{section*.28}% 30
+\BOOKMARK [1][-]{section*.30}{Notes on the Microprocessor}{section*.28}% 31

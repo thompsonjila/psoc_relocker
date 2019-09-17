@@ -1,0 +1,10 @@
+--------------- Rebuild Started: 05/07/2019 16:07:44 Project: main.c, Configuration: ARM GCC 5.4-2016-q2-update Release ---------------
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_541\Release/main.lst -g -D NDEBUG -Wall -ffunction-sections -ffat-lto-objects -Os -c main.c -o .\CortexM3\ARM_GCC_541\Release\main.o
+main.c: In function 'main':
+main.c:213:50: warning: 'errMonThreshold2' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if ((errorMonitorADC < errMonThreshold1) || (errorMonitorADC > errMonThreshold2)) {
+                                                  ^
+main.c:213:12: warning: 'errMonThreshold1' may be used uninitialized in this function [-Wmaybe-uninitialized]
+         if ((errorMonitorADC < errMonThreshold1) || (errorMonitorADC > errMonThreshold2)) {
+            ^
+--------------- Rebuild Succeeded: 05/07/2019 16:07:44 ---------------

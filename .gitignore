@@ -1,0 +1,11 @@
+/src/Backups/
+*.zip
+*.db
+*.synctex.gz
+*.toc
+*.ai
+*.blg
+*.log
+*.out
+*.aux
+*.bib

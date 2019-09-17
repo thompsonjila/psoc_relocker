@@ -1,0 +1,36 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Operation Guide}{4}{chapter.2}
+\contentsline {section}{Initial Setup Procedure}{4}{section*.2}
+\contentsline {section}{Front Panel LEDs}{5}{section*.3}
+\contentsline {chapter}{\numberline {3}Basic Relocking Mechanism}{6}{chapter.3}
+\contentsline {section}{System Structure}{6}{section*.4}
+\contentsline {section}{The Re-stabilization Procedure}{6}{section*.5}
+\contentsline {subsection}{The Basic Process}{7}{subsection*.6}
+\contentsline {subsection}{Underlying (Threshold) Mechanics}{8}{subsection*.7}
+\contentsline {chapter}{\numberline {4}Relocking System Structure}{10}{chapter.4}
+\contentsline {section}{External Box Connections}{10}{section*.8}
+\contentsline {section}{Internal Box Connections}{10}{section*.9}
+\contentsline {subsection}{Control Panel Modules}{11}{subsection*.10}
+\contentsline {subsection}{Level Shifters}{11}{subsection*.11}
+\contentsline {subsubsection}{Loop Filter Output Level Shifter}{12}{subsubsection*.12}
+\contentsline {subsubsection}{Error Signal Level Shifter \textbf {and} Voltage Limiter}{12}{subsubsection*.13}
+\contentsline {subsubsection}{Microprocessor Output Level Shifter}{13}{subsubsection*.14}
+\contentsline {subsection}{Buffer Amplifiers}{14}{subsection*.15}
+\contentsline {subsection}{Loop Filter Input Switches}{15}{subsection*.16}
+\contentsline {subsection}{``Triggered'' Relocking (Block Lock TTL)}{15}{subsection*.17}
+\contentsline {chapter}{\numberline {5}Relocker Algorithm}{17}{chapter.5}
+\contentsline {section}{Calculating Voltage Sweep Bounds}{19}{section*.18}
+\contentsline {section}{The Code}{20}{section*.19}
+\contentsline {section}{Calibrating the Voltage Sweeps}{24}{section*.20}
+\contentsline {chapter}{\numberline {6}Known Issues and Future Work}{26}{chapter.6}
+\contentsline {section}{Cleaning up the Error Signal}{26}{section*.21}
+\contentsline {section}{Offsetting the Center of the Voltage Sweep}{27}{section*.22}
+\contentsline {section}{Slowing Down the Relocking Sweep}{27}{section*.23}
+\contentsline {chapter}{\numberline {7}Serial Communication}{28}{chapter.7}
+\contentsline {section}{Serial Communications Server}{28}{section*.24}
+\contentsline {subsubsection}{Dependencies}{28}{subsubsection*.25}
+\contentsline {subsubsection}{Using the Program}{28}{subsubsection*.26}
+\contentsline {chapter}{\numberline {8}Printed Circuit Board}{29}{chapter.8}
+\contentsline {chapter}{Appendices}{31}{section*.28}
+\contentsline {section}{Pictures of the Relocker Box, as of June 15, 2018}{32}{section*.29}
+\contentsline {section}{Notes on the Microprocessor}{33}{section*.30}

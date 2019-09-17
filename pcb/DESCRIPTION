@@ -1,0 +1,3 @@
+<strong>Triggered Relocker</strong>
+
+<p>This board works with a FreeSoc2 microprocessor/program to detect dropped servo loops and re-engage them.</p>

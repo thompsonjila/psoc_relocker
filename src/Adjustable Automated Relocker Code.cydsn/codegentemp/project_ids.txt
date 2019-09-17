@@ -1,0 +1,7 @@
+C:\Users\Thompson Lab\Local Data (D)\psoc_relocker\src\Adjustable Automated Relocker Code.cydsn\Adjustable Automated Relocker Code.cyprj|bfdf9840-d891-4579-af23-22eeb2a96754
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|14251eb7-56af-4386-a1f5-cdc2fbd56666
+C:\Users\Thompson Lab\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|45cc9362-8b5e-4a4e-bb18-37d21544f0c4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6b11fd09-a499-4cc4-a220-19e7f0173817
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|508b8295-a167-494f-aab9-9a4f55764a1c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|897f0956-1f44-4196-8e25-a5d583737774
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|d2c58161-732a-48ed-b1e2-a9b53f9bde99
