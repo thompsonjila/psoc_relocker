@@ -47,6 +47,7 @@ class App:
         self.num_pts = 28
         self.plttime = time.strftime("%#I:%M:%S %p, %B %d, %Y", time.localtime())
         self.pltdata = "07A407A2079907A2079C07A0079B0798079B079607910787078B07850778077D076B076F0759075B0741072A072B070E073806AA06E305B0096D07D907DA07D207DF07D607D507D807D507E207D407D707DB07DB07D807D907D807D207D607D907D607D707D007DB07D907D907D907D707E107D507DA07DA07D507DC07DA07D807DF07DB07DE07D607D507DC07DB07D707D407D907D407D807D607D707D607DF07D507DB07D907DC07D407D807D507D407DA07D607C307D807DC07DF07D907DC07DA07D907D907D907D407D507D907DE07DC07D807DB07D707D707DA07D507DA07D807DC07DD07DF07D907DC07E007D407DB07E307D107DE07D507D707DB07DD07DC07DD07D507DE07E207DA07DA07D607D407DA07DF07E007D907DE07D207DD07DD07D507DB07E007DF07DD07DF07DE07D707DE07DA07DC07D907DE07D807DC07E007E107DA07DD07E007DC07DB07DE07E007DE07E007E007D907E007DF07E307E107E007DE07DF07E107E107E107E007DF07E007E407E907E507E007E307E507E207E907EB07EA07EA07F007EF07F407F907F107F2080607FA08020800080308040822082208260842082D086C08C7090607DA06CC069806F3073807700775077B077B078B0787079507960796079B079E07A0079F07A607A107A307AC07AB07AA07A707AF07A707A607B107AC07AA07AA07B007A807AB07A707A407A8"
+        self.pltdata = "00000000"
 
         master.title("Relocker GUI")
         master.iconbitmap('salamander.ico')
@@ -73,8 +74,9 @@ class App:
         self.menu1.add_command(label=" Exit", command=self.master.destroy, accelerator="Ctrl+W", underline=1, image=self.img_exit, compound='left')
         self.master.bind_all("<Control-w>", self.master.destroy)
         self.var_reload_plot = tk.BooleanVar()
+        self.var_reload_plot.set(True)
         self.menu2.add_checkbutton(label=" Reload plot automatically", onvalue=True, offvalue=False, variable=self.var_reload_plot)
-        self.menu3.add_command(label=" Plot last error trace", state="disabled", command=self.scan_serial_ports, image=self.img_plot, compound='left')
+        self.menu3.add_command(label=" Plot last error trace", command=self.scan_serial_ports, image=self.img_plot, compound='left')
         self.menu3.add_command(label=" Rescan COM ports", command=self.scan_serial_ports, image=self.img_reload, compound='left')
         self.menu4.add_command(label=" About", command=self.about, image=self.img_info, compound='left')
         self.menu.add_cascade(label="File", menu=self.menu1)
@@ -104,7 +106,7 @@ class App:
         self.button_disconnect.grid(row=2, column=1, rowspan=2, padx=5, pady=5, sticky=tk.W)
         self.button_rescan.grid(row=4, column=1, rowspan=2, padx=5, pady=5, sticky=tk.W)
       
-        self.button_plot = tk.Button(self.master, text="Plot last error signal", state="disabled", image=self.img_logo2, compound='top', command=self.create_plot_window)
+        self.button_plot = tk.Button(self.master, text="Plot last error signal", image=self.img_logo2, compound='top', command=self.create_plot_window)
         self.button_plot.grid(row=0, rowspan=6, column=2, padx=45, pady=10, sticky=tk.N + tk.E + tk.W + tk.S)
        
         tk.Grid.columnconfigure(self.master, 2, weight=1)
@@ -238,6 +240,7 @@ class App:
         self.label_errmon_v2_val.set("-")
         self.label_errmon_v3_val.set("-")
         self.label_errmon_v4_val.set("-")
+        self.pltdata = "00000000"
         self.label_LFmode_val.set("Unknown")
   
       
@@ -297,7 +300,7 @@ class App:
                       self.plttime = time.strftime("%m/%d %H:%M:%S %p", time.localtime())
                       print("Stored new error monitor trace.")
                       self.menu3.entryconfig(" Plot last error trace", state="normal")
-                      self.button_plot.config(state="normal")
+                      # self.button_plot.config(state="normal")
                       # print(parsed_line.groups())
                       log_message = False
                       if (self.var_reload_plot.get() and hasattr(self, "graph")):
@@ -381,7 +384,6 @@ class Graph():
         data_bin = binascii.unhexlify(pltdata)
         int_values = struct.iter_unpack(">H", data_bin)
         vals = np.trim_zeros([x[0] for x in int_values])
-        print(len(vals))
         vals = vals[stop_counter+1:] + vals[0:stop_counter+1]
         w1 = TL.Wave(vals, name="Error monitor V [arb]")
         t1 = TL.Trace(w1, ls='-', marker=None)

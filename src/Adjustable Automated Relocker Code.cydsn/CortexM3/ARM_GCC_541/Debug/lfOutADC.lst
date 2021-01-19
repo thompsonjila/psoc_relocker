@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
   29:Generated_Source\PSoC5/LFOutADC.c **** 
   30:Generated_Source\PSoC5/LFOutADC.c **** 
   31:Generated_Source\PSoC5/LFOutADC.c **** /***************************************
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 2
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 2
 
 
   32:Generated_Source\PSoC5/LFOutADC.c **** * Global data allocation
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
   86:Generated_Source\PSoC5/LFOutADC.c **** *
   87:Generated_Source\PSoC5/LFOutADC.c **** * Return:
   88:Generated_Source\PSoC5/LFOutADC.c **** *  None
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 3
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 3
 
 
   89:Generated_Source\PSoC5/LFOutADC.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  143:Generated_Source\PSoC5/LFOutADC.c ****                                           LFOutADC_CFG2);
  144:Generated_Source\PSoC5/LFOutADC.c ****     #endif /* LFOutADC_DEFAULT_NUM_CONFIGS > 1 */
  145:Generated_Source\PSoC5/LFOutADC.c ****     #if(LFOutADC_DEFAULT_NUM_CONFIGS > 2)
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 4
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 4
 
 
  146:Generated_Source\PSoC5/LFOutADC.c ****         LFOutADC_GainCompensation(LFOutADC_CFG3_INPUT_RANGE,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  200:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_STBY_PWRMGR_DEC_REG |= LFOutADC_STBY_PWR_DEC_EN;
  201:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_STBY_PWRMGR_DSM_REG |= LFOutADC_STBY_PWR_DSM_EN;
  202:Generated_Source\PSoC5/LFOutADC.c **** 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 5
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 5
 
 
  203:Generated_Source\PSoC5/LFOutADC.c ****     /* Disable PRES, Enable power to VCMBUF0, REFBUF0 and REFBUF1, enable PRES */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  257:Generated_Source\PSoC5/LFOutADC.c ****              (LFOutADC_CFG3_REFERENCE != LFOutADC_EXT_REF_ON_P32))) ||
  258:Generated_Source\PSoC5/LFOutADC.c ****              ((config == 4u) &&
  259:Generated_Source\PSoC5/LFOutADC.c ****               (LFOutADC_CFG4_INPUT_RANGE == LFOutADC_IR_VSSA_TO_2VREF) &&
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 6
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 6
 
 
  260:Generated_Source\PSoC5/LFOutADC.c ****              ((LFOutADC_CFG4_REFERENCE != LFOutADC_EXT_REF_ON_P03) &&
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  314:Generated_Source\PSoC5/LFOutADC.c **** *  Subsequent calls of the Start function only enable the ADC and turn
  315:Generated_Source\PSoC5/LFOutADC.c **** *  on the power. If multiple configurations are selected, it will
  316:Generated_Source\PSoC5/LFOutADC.c **** *  configure the ADC for configuration 1 by default, unless the
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 7
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 7
 
 
  317:Generated_Source\PSoC5/LFOutADC.c **** *  LFOutADC_SelectConfiguration( ) function has been called to change
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  371:Generated_Source\PSoC5/LFOutADC.c **** 
  372:Generated_Source\PSoC5/LFOutADC.c ****     /* Stop conversions */
  373:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_DEC_CR_REG &= (uint8)~LFOutADC_DEC_START_CONV;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 8
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 8
 
 
  374:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_DEC_SR_REG |=  LFOutADC_DEC_INTR_CLEAR;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  428:Generated_Source\PSoC5/LFOutADC.c **** *  gain:  Two bit value to select a gain of 1, 2, 4, or 8.
  429:Generated_Source\PSoC5/LFOutADC.c **** *
  430:Generated_Source\PSoC5/LFOutADC.c **** * Return:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 9
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 9
 
 
  431:Generated_Source\PSoC5/LFOutADC.c **** *  None
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  485:Generated_Source\PSoC5/LFOutADC.c **** *  Calculates a new GCOR value and writes it into the GCOR register. 
  486:Generated_Source\PSoC5/LFOutADC.c **** *  The GCOR value is a 16-bit value that represents a gain of 0 to 2. 
  487:Generated_Source\PSoC5/LFOutADC.c **** *  The ADC result is multiplied by this value before it is placed in the ADC 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 10
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 10
 
 
  488:Generated_Source\PSoC5/LFOutADC.c **** *  output registers. The numerical format for the GCOR value is:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  542:Generated_Source\PSoC5/LFOutADC.c **** *
  543:Generated_Source\PSoC5/LFOutADC.c **** * Summary:
  544:Generated_Source\PSoC5/LFOutADC.c **** *  This API returns the current GCOR register value, normalized based on the
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 11
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 11
 
 
  545:Generated_Source\PSoC5/LFOutADC.c **** *  GVAL register settings.
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  599:Generated_Source\PSoC5/LFOutADC.c **** * Function Name: LFOutADC_StopConvert
  600:Generated_Source\PSoC5/LFOutADC.c **** ********************************************************************************
  601:Generated_Source\PSoC5/LFOutADC.c **** *
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 12
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 12
 
 
  602:Generated_Source\PSoC5/LFOutADC.c **** * Summary:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  656:Generated_Source\PSoC5/LFOutADC.c ****         *   resolution above 16 bit
  657:Generated_Source\PSoC5/LFOutADC.c ****         */
  658:Generated_Source\PSoC5/LFOutADC.c ****         if(LFOutADC_stopConversion != 0u)
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 13
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 13
 
 
  659:Generated_Source\PSoC5/LFOutADC.c ****         {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  713:Generated_Source\PSoC5/LFOutADC.c ****     }
  714:Generated_Source\PSoC5/LFOutADC.c ****     else /*No action required for other coherency */
  715:Generated_Source\PSoC5/LFOutADC.c ****     {
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 14
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 14
 
 
  716:Generated_Source\PSoC5/LFOutADC.c ****     }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  770:Generated_Source\PSoC5/LFOutADC.c ****             result = (CY_GET_REG16(LFOutADC_DEC_SAMP_16B_PTR));
  771:Generated_Source\PSoC5/LFOutADC.c ****         #else
  772:Generated_Source\PSoC5/LFOutADC.c ****             result = LFOutADC_DEC_SAMP_REG;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 15
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 15
 
 
  773:Generated_Source\PSoC5/LFOutADC.c ****             result |=  (uint16)((uint16)LFOutADC_DEC_SAMPM_REG << 8u);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  827:Generated_Source\PSoC5/LFOutADC.c ****                 result |= 0xFF00u;
  828:Generated_Source\PSoC5/LFOutADC.c ****             }
  829:Generated_Source\PSoC5/LFOutADC.c ****             result = (result << 8u) | LFOutADC_DEC_SAMPM_REG;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 16
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 16
 
 
  830:Generated_Source\PSoC5/LFOutADC.c ****             result = (result << 8u) | LFOutADC_DEC_SAMP_REG;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  884:Generated_Source\PSoC5/LFOutADC.c **** *  given reading before calculating the voltage conversion.
  885:Generated_Source\PSoC5/LFOutADC.c **** *
  886:Generated_Source\PSoC5/LFOutADC.c **** * Parameters:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 17
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 17
 
 
  887:Generated_Source\PSoC5/LFOutADC.c **** *  int32:  This value is a measured value when the inputs are shorted or 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  941:Generated_Source\PSoC5/LFOutADC.c **** }
  942:Generated_Source\PSoC5/LFOutADC.c **** 
  943:Generated_Source\PSoC5/LFOutADC.c **** 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 18
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 18
 
 
  944:Generated_Source\PSoC5/LFOutADC.c **** /*******************************************************************************
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  998:Generated_Source\PSoC5/LFOutADC.c **** 
  999:Generated_Source\PSoC5/LFOutADC.c ****     mVolts = (int16)(( adcCounts * LFOutADC_1MV_COUNTS ) / LFOutADC_CountsPerVolt) ;
 1000:Generated_Source\PSoC5/LFOutADC.c **** 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 19
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 19
 
 
 1001:Generated_Source\PSoC5/LFOutADC.c ****     return(mVolts);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1055:Generated_Source\PSoC5/LFOutADC.c ****     #endif /* LFOutADC_CFG2_DEC_DIV */
 1056:Generated_Source\PSoC5/LFOutADC.c **** 
 1057:Generated_Source\PSoC5/LFOutADC.c ****     /* Subtract ADC offset */
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 20
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 20
 
 
 1058:Generated_Source\PSoC5/LFOutADC.c ****     adcCounts -= LFOutADC_Offset;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1112:Generated_Source\PSoC5/LFOutADC.c ****         #if(LFOutADC_CFG2_DEC_DIV != 0)
 1113:Generated_Source\PSoC5/LFOutADC.c ****             adcCounts /= LFOutADC_CFG2_DEC_DIV;
 1114:Generated_Source\PSoC5/LFOutADC.c ****         #endif /* LFOutADC_CFG2_DEC_DIV */
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 21
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 21
 
 
 1115:Generated_Source\PSoC5/LFOutADC.c ****     }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1169:Generated_Source\PSoC5/LFOutADC.c ****         #if( (LFOutADC_CFG1_RESOLUTION == LFOutADC__BITS_16) || \
 1170:Generated_Source\PSoC5/LFOutADC.c ****              (LFOutADC_CFG2_RESOLUTION == LFOutADC__BITS_16) || \
 1171:Generated_Source\PSoC5/LFOutADC.c ****              (LFOutADC_CFG3_RESOLUTION == LFOutADC__BITS_16) || \
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 22
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 22
 
 
 1172:Generated_Source\PSoC5/LFOutADC.c ****              (LFOutADC_CFG4_RESOLUTION == LFOutADC__BITS_16) )
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1226:Generated_Source\PSoC5/LFOutADC.c **** 
 1227:Generated_Source\PSoC5/LFOutADC.c **** /*******************************************************************************
 1228:Generated_Source\PSoC5/LFOutADC.c **** * Function Name: LFOutADC_InitConfig(uint8 config)
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 23
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 23
 
 
 1229:Generated_Source\PSoC5/LFOutADC.c **** ********************************************************************************
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1283:Generated_Source\PSoC5/LFOutADC.c ****         LFOutADC_DSM_BUF2_REG    = LFOutADC_CFG1_DSM_BUF2;
 1284:Generated_Source\PSoC5/LFOutADC.c ****         LFOutADC_DSM_BUF3_REG    = LFOutADC_CFG1_DSM_BUF3;
 1285:Generated_Source\PSoC5/LFOutADC.c **** 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 24
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 24
 
 
 1286:Generated_Source\PSoC5/LFOutADC.c ****         /* To select either Vssa or Vref to -ve input of DSM depending on
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1340:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DSM_CR11_REG    = LFOutADC_CFG2_DSM_CR11;
 1341:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DSM_CR12_REG    = LFOutADC_CFG2_DSM_CR12;
 1342:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DSM_CR14_REG    = LFOutADC_CFG2_DSM_CR14;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 25
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 25
 
 
 1343:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DSM_CR15_REG    = LFOutADC_CFG2_DSM_CR15;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1397:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DEC_SHIFT1_REG  = LFOutADC_CFG3_DEC_SHIFT1;
 1398:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DEC_SHIFT2_REG  = LFOutADC_CFG3_DEC_SHIFT2;
 1399:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DEC_DR2_REG     = LFOutADC_CFG3_DEC_DR2;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 26
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 26
 
 
 1400:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_DEC_DR2H_REG    = LFOutADC_CFG3_DEC_DR2H;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1454:Generated_Source\PSoC5/LFOutADC.c **** 
 1455:Generated_Source\PSoC5/LFOutADC.c ****             #if(LFOutADC_IRQ_REMOVE == 0u)
 1456:Generated_Source\PSoC5/LFOutADC.c ****                 /* Set interrupt vector */
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 27
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 27
 
 
 1457:Generated_Source\PSoC5/LFOutADC.c ****                 (void)CyIntSetVector(LFOutADC_INTC_NUMBER, &LFOutADC_ISR3);
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1511:Generated_Source\PSoC5/LFOutADC.c ****             #if(LFOutADC_CFG4_RESOLUTION > 16 && \
 1512:Generated_Source\PSoC5/LFOutADC.c ****                 LFOutADC_CFG4_CONV_MODE == LFOutADC_MODE_SINGLE_SAMPLE)
 1513:Generated_Source\PSoC5/LFOutADC.c ****                 LFOutADC_stopConversion = 1u;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 28
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 28
 
 
 1514:Generated_Source\PSoC5/LFOutADC.c ****             #endif /* Single sample with resolution above 16 bits */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1568:Generated_Source\PSoC5/LFOutADC.c **** 		*/
 1569:Generated_Source\PSoC5/LFOutADC.c ****         if(LFOutADC_initVar == 0u)
 1570:Generated_Source\PSoC5/LFOutADC.c ****         {
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 29
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 29
 
 
 1571:Generated_Source\PSoC5/LFOutADC.c ****             LFOutADC_started = 1u;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1625:Generated_Source\PSoC5/LFOutADC.c **** static void LFOutADC_GainCompensation(uint8 inputRange, uint16 idealDecGain, uint16 idealOddDecGain
 1626:Generated_Source\PSoC5/LFOutADC.c ****                               uint8 resolution, uint8 config) 
 1627:Generated_Source\PSoC5/LFOutADC.c **** {
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 30
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 30
 
 
   27              		.loc 1 1627 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
   66              	.LVL2:
   67 0028 22E0     		b	.L3
   68              	.LVL3:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 31
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 31
 
 
   69              	.L9:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1666:Generated_Source\PSoC5/LFOutADC.c ****                     flash = LFOutADC_DEC_TRIM_VREF_4_DIFF_16_20;
  100              		.loc 1 1666 0
  101 004a 1F48     		ldr	r0, .L18+16
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 32
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 32
 
 
  102 004c 0078     		ldrb	r0, [r0]	@ zero_extendqisi2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  135              		.loc 1 1687 0
  136 006e 0020     		movs	r0, #0
  137              	.L3:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 33
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 33
 
 
  138              	.LVL18:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  175 009a 0F49     		ldr	r1, .L18+32
  176 009c 01EB8303 		add	r3, r1, r3, lsl #2
  177 00a0 0F21     		movs	r1, #15
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 34
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 34
 
 
  178 00a2 9970     		strb	r1, [r3, #2]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1720:Generated_Source\PSoC5/LFOutADC.c **** ******************************************************************************
 1721:Generated_Source\PSoC5/LFOutADC.c **** *
 1722:Generated_Source\PSoC5/LFOutADC.c **** * Summary:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 35
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 35
 
 
 1723:Generated_Source\PSoC5/LFOutADC.c **** *  This API sets the DSM_REF0 register. This is written for internal use.
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  250 0022 0320     		movs	r0, #3
  251 0024 FFF7FEFF 		bl	CyDelayUs
  252              	.LVL38:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 36
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 36
 
 
 1744:Generated_Source\PSoC5/LFOutADC.c ****     /* Enable the press circuit */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  298              		.cfi_offset 4, -16
  299              		.cfi_offset 5, -12
  300              		.cfi_offset 6, -8
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 37
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 37
 
 
  301              		.cfi_offset 14, -4
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  343 0048 0722     		movs	r2, #7
  344 004a 0133     		adds	r3, r3, #1
  345 004c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 38
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 38
 
 
 1267:Generated_Source\PSoC5/LFOutADC.c ****         LFOutADC_DSM_CR7_REG     = LFOutADC_CFG1_DSM_CR7;
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  388 0088 0133     		adds	r3, r3, #1
  389 008a 1C70     		strb	r4, [r3]
 1281:Generated_Source\PSoC5/LFOutADC.c ****         LFOutADC_DSM_BUF1_REG    = LFOutADC_CFG1_DSM_BUF1;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 39
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 39
 
 
  390              		.loc 1 1281 0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  436              	.L29:
  437 00ca 00BF     		.align	2
  438              	.L28:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 40
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 40
 
 
  439 00cc 00000000 		.word	.LANCHOR0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  487 0020 FFF7FEFF 		bl	CyIntSetPriority
  488              	.LVL51:
  110:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_DSM_DEM1_REG    = LFOutADC_CFG1_DSM_DEM1;
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 41
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 41
 
 
  489              		.loc 1 110 0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  531              		.loc 1 128 0
  532 0066 0433     		adds	r3, r3, #4
  533 0068 1C70     		strb	r4, [r3]
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 42
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 42
 
 
  130:Generated_Source\PSoC5/LFOutADC.c **** 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  582              		.align	2
  583              		.global	LFOutADC_Enable
  584              		.thumb
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 43
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 43
 
 
  585              		.thumb_func
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  205:Generated_Source\PSoC5/LFOutADC.c **** 
  631              		.loc 1 205 0
  632 003a 214C     		ldr	r4, .L36+12
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 44
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 44
 
 
  633 003c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  677              		.loc 1 293 0
  678 0092 1032     		adds	r2, r2, #16
  679 0094 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 45
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 45
 
 
  680 0096 43F00103 		orr	r3, r3, #1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  729 0006 4BB9     		cbnz	r3, .L39
  338:Generated_Source\PSoC5/LFOutADC.c ****         {
  730              		.loc 1 338 0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 46
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 46
 
 
  731 0008 064B     		ldr	r3, .L42
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  779 0008 314A     		ldr	r2, .L46
  780 000a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  781 000c 03F0FE03 		and	r3, r3, #254
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 47
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 47
 
 
  782 0010 1370     		strb	r3, [r2]
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  826 0066 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
  827 0068 02F0FE02 		and	r2, r2, #254
  828 006c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 48
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 48
 
 
  398:Generated_Source\PSoC5/LFOutADC.c ****     LFOutADC_STBY_PWRMGR_DSM_REG &= (uint8)~LFOutADC_STBY_PWR_DSM_EN;
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  874 00cc 70BD     		pop	{r4, r5, r6, pc}
  875              	.LVL66:
  876              	.L47:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 49
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 49
 
 
  877 00ce 00BF     		.align	2
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  927              		.type	LFOutADC_SetCoherency, %function
  928              	LFOutADC_SetCoherency:
  929              	.LFB5:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 50
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 50
 
 
  471:Generated_Source\PSoC5/LFOutADC.c ****     uint8 tmpReg;
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  516:Generated_Source\PSoC5/LFOutADC.c ****     tmpValue = ((float32)tmpReg / (float32)LFOutADC_IDEAL_GAIN_CONST);
  979              		.loc 1 516 0
  980 0004 184B     		ldr	r3, .L58+8
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 51
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 51
 
 
  981 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1027              		.loc 1 532 0
  1028 0054 0020     		movs	r0, #0
  1029              	.LVL88:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 52
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 52
 
 
  1030 0056 10BD     		pop	{r4, pc}
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1077 0010 C3F10F03 		rsb	r3, r3, #15
  1078              	.LVL94:
  1079 0014 9840     		lsls	r0, r0, r3
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 53
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 53
 
 
  1080              	.LVL95:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1130              		@ args = 0, pretend = 0, frame = 0
  1131              		@ frame_needed = 0, uses_anonymous_args = 0
  1132              		@ link register save eliminated.
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 54
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 54
 
 
  617:Generated_Source\PSoC5/LFOutADC.c **** }
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1181 001a 012B     		cmp	r3, #1
  1182 001c 01D0     		beq	.L73
  666:Generated_Source\PSoC5/LFOutADC.c **** 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 55
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 55
 
 
  1183              		.loc 1 666 0 is_stmt 0 discriminator 1
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1231              	.L78:
  710:Generated_Source\PSoC5/LFOutADC.c ****     {   /* Dummy read of the MSB byte to unlock the coherency */
  1232              		.loc 1 710 0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 56
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 56
 
 
  1233 0018 032B     		cmp	r3, #3
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  758:Generated_Source\PSoC5/LFOutADC.c ****     {   /*  Use default method to read result registers i.e. LSB byte read at the end*/
  1281              		.loc 1 758 0
  1282 0008 012B     		cmp	r3, #1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 57
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 57
 
 
  1283 000a 03D8     		bhi	.L84
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1329 0048 124E0040 		.word	1073761810
  1330 004c 00000000 		.word	.LANCHOR0
  1331              		.cfi_endproc
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 58
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 58
 
 
  1332              	.LFE12:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1378 0024 023B     		subs	r3, r3, #2
  1379 0026 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
  1380 0028 43EA0043 		orr	r3, r3, r0, lsl #16
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 59
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 59
 
 
  1381              	.LVL121:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1429              		.thumb_func
  1430              		.type	LFOutADC_SetOffset, %function
  1431              	LFOutADC_SetOffset:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 60
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 60
 
 
  1432              	.LFB14:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1482              	.LFB16:
  966:Generated_Source\PSoC5/LFOutADC.c **** 
  1483              		.loc 1 966 0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 61
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 61
 
 
  1484              		.cfi_startproc
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1533 0002 074B     		ldr	r3, .L107
  1534 0004 9B68     		ldr	r3, [r3, #8]
  1535              	.LVL134:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 62
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 62
 
 
 1060:Generated_Source\PSoC5/LFOutADC.c **** 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1585 0012 01D0     		beq	.L110
 1116:Generated_Source\PSoC5/LFOutADC.c ****     {
  1586              		.loc 1 1116 0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 63
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 63
 
 
  1587 0014 0A4B     		ldr	r3, .L112
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1637              		.cfi_def_cfa_offset 16
  1638              		.cfi_offset 3, -16
  1639              		.cfi_offset 4, -12
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 64
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 64
 
 
  1640              		.cfi_offset 5, -8
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1683              		.loc 1 1593 0
  1684 0042 FFF7FEFF 		bl	LFOutADC_StartConvert
  1685              	.LVL149:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 65
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 65
 
 
  1686 0046 38BD     		pop	{r3, r4, r5, pc}
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1716              		@ args = 0, pretend = 0, frame = 0
  1717              		@ frame_needed = 0, uses_anonymous_args = 0
  1718 0000 10B5     		push	{r4, lr}
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 66
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 66
 
 
  1719              		.cfi_def_cfa_offset 8
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1784:Generated_Source\PSoC5/LFOutADC.c **** 
 1785:Generated_Source\PSoC5/LFOutADC.c **** /*******************************************************************************
 1786:Generated_Source\PSoC5/LFOutADC.c **** * Function Name: LFOutADC_Read16
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 67
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 67
 
 
 1787:Generated_Source\PSoC5/LFOutADC.c **** ********************************************************************************
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
 1813:Generated_Source\PSoC5/LFOutADC.c ****     
 1814:Generated_Source\PSoC5/LFOutADC.c ****      return(result);
 1815:Generated_Source\PSoC5/LFOutADC.c **** }
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 68
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 68
 
 
  1789              		.loc 1 1815 0
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1817 0002 084A     		ldr	r2, .L131
  1818 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  1819 0006 43F00403 		orr	r3, r3, #4
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 69
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 69
 
 
  1820 000a 1370     		strb	r3, [r2]
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1867              		.type	LFOutADC_stopConversion, %object
  1868              		.size	LFOutADC_stopConversion, 1
  1869              	LFOutADC_stopConversion:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 70
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 70
 
 
  1870 0004 00       		.space	1
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1924 003d 21040000 		.4byte	.LASF3
  1925 0041 02       		.uleb128 0x2
  1926 0042 02       		.byte	0x2
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 71
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 71
 
 
  1927 0043 07       		.byte	0x7
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  1981 00b4 E901     		.2byte	0x1e9
  1982 00b6 48000000 		.4byte	0x48
  1983 00ba 04       		.uleb128 0x4
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 72
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 72
 
 
  1984 00bb 67030000 		.4byte	.LASF16
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2038 012e 03       		.byte	0x3
  2039 012f 32       		.byte	0x32
  2040 0130 72000000 		.4byte	0x72
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 73
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 73
 
 
  2041 0134 02       		.byte	0x2
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2095 01bc 01       		.byte	0x1
  2096 01bd 5D06     		.2byte	0x65d
  2097 01bf AE000000 		.4byte	0xae
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 74
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 74
 
 
  2098 01c3 A3010000 		.4byte	.LLST6
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2152 0246 01       		.uleb128 0x1
  2153 0247 33       		.byte	0x33
  2154 0248 00       		.byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 75
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 75
 
 
  2155 0249 0C       		.uleb128 0xc
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2209 02b7 50       		.byte	0x50
  2210 02b8 02       		.uleb128 0x2
  2211 02b9 76       		.byte	0x76
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 76
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 76
 
 
  2212 02ba 00       		.sleb128 0
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2266 0314 0F       		.uleb128 0xf
  2267 0315 1C000000 		.4byte	.LVL50
  2268 0319 020A0000 		.4byte	0xa02
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 77
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 77
 
 
  2269 031d 27030000 		.4byte	0x327
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2323 036a 00       		.sleb128 0
  2324 036b 00       		.byte	0
  2325 036c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 78
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 78
 
 
  2326 036d A4000000 		.4byte	.LVL53
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2380 03e3 9C       		.byte	0x9c
  2381 03e4 FB030000 		.4byte	0x3fb
  2382 03e8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 79
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 79
 
 
  2383 03e9 16000000 		.4byte	.LVL60
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2437 0464 0A       		.uleb128 0xa
  2438 0465 9F030000 		.4byte	.LASF46
  2439 0469 01       		.byte	0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 80
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 80
 
 
  2440 046a B201     		.2byte	0x1b2
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2494 04f6 0B       		.uleb128 0xb
  2495 04f7 EC050000 		.4byte	.LASF51
  2496 04fb 01       		.byte	0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 81
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 81
 
 
  2497 04fc 0102     		.2byte	0x201
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2551 0582 00000000 		.4byte	.LFB10
  2552 0586 30000000 		.4byte	.LFE10-.LFB10
  2553 058a 01       		.uleb128 0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 82
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 82
 
 
  2554 058b 9C       		.byte	0x9c
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2608 0610 48040000 		.4byte	.LLST27
  2609 0614 0B       		.uleb128 0xb
  2610 0615 84030000 		.4byte	.LASF49
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 83
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 83
 
 
  2611 0619 01       		.byte	0x1
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2665 069b 18       		.uleb128 0x18
  2666 069c 07000000 		.4byte	.LASF67
  2667 06a0 01       		.byte	0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 84
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 84
 
 
  2668 06a1 AA03     		.2byte	0x3aa
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2722 071d 35020000 		.4byte	.LASF73
  2723 0721 01       		.byte	0x1
  2724 0722 4404     		.2byte	0x444
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 85
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 85
 
 
  2725 0724 AE000000 		.4byte	0xae
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2779 07ad 01       		.byte	0x1
  2780 07ae 1806     		.2byte	0x618
  2781 07b0 72000000 		.4byte	0x72
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 86
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 86
 
 
  2782 07b4 03060000 		.4byte	.LLST37
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2836 0837 0D       		.uleb128 0xd
  2837 0838 01       		.uleb128 0x1
  2838 0839 50       		.byte	0x50
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 87
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 87
 
 
  2839 083a 01       		.uleb128 0x1
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2893 08be 9C       		.byte	0x9c
  2894 08bf 02090000 		.4byte	0x902
  2895 08c3 0B       		.uleb128 0xb
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 88
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 88
 
 
  2896 08c4 A6060000 		.4byte	.LASF61
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  2950 0940 03       		.byte	0x3
  2951 0941 00000000 		.4byte	LFOutADC_convDone
  2952 0945 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 89
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 89
 
 
  2953 0946 C5010000 		.4byte	.LASF85
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3007 09be 04       		.byte	0x4
  3008 09bf 77       		.byte	0x77
  3009 09c0 1F       		.uleb128 0x1f
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 90
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 90
 
 
  3010 09c1 B9030000 		.4byte	.LASF93
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3064 000c 17       		.uleb128 0x17
  3065 000d 11       		.uleb128 0x11
  3066 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 91
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 91
 
 
  3067 000f 10       		.uleb128 0x10
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3121 0045 0B       		.uleb128 0xb
  3122 0046 01       		.uleb128 0x1
  3123 0047 13       		.uleb128 0x13
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 92
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 92
 
 
  3124 0048 00       		.byte	0
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3178 007f 05       		.uleb128 0x5
  3179 0080 00       		.byte	0
  3180 0081 03       		.uleb128 0x3
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 93
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 93
 
 
  3181 0082 0E       		.uleb128 0xe
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3235 00bf 898201   		.uleb128 0x4109
  3236 00c2 01       		.byte	0x1
  3237 00c3 11       		.uleb128 0x11
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 94
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 94
 
 
  3238 00c4 01       		.uleb128 0x1
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3292 00fb 49       		.uleb128 0x49
  3293 00fc 13       		.uleb128 0x13
  3294 00fd 02       		.uleb128 0x2
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 95
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 95
 
 
  3295 00fe 17       		.uleb128 0x17
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3349 0136 00       		.byte	0
  3350 0137 15       		.uleb128 0x15
  3351 0138 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 96
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 96
 
 
  3352 0139 01       		.byte	0x1
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3406 0171 0B       		.uleb128 0xb
  3407 0172 3B       		.uleb128 0x3b
  3408 0173 05       		.uleb128 0x5
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 97
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 97
 
 
  3409 0174 49       		.uleb128 0x49
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3463 01aa 49       		.uleb128 0x49
  3464 01ab 13       		.uleb128 0x13
  3465 01ac 01       		.uleb128 0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 98
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 98
 
 
  3466 01ad 13       		.uleb128 0x13
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3520 01e3 0E       		.uleb128 0xe
  3521 01e4 3A       		.uleb128 0x3a
  3522 01e5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 99
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 99
 
 
  3523 01e6 3B       		.uleb128 0x3b
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3577 006b 9F       		.byte	0x9f
  3578 006c 00000000 		.4byte	0
  3579 0070 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 100
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 100
 
 
  3580              	.LLST2:
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3634 00f3 0400     		.2byte	0x4
  3635 00f5 F3       		.byte	0xf3
  3636 00f6 01       		.uleb128 0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 101
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 101
 
 
  3637 00f7 53       		.byte	0x53
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3691 0184 50       		.byte	0x50
  3692 0185 70000000 		.4byte	.LVL18
  3693 0189 8E000000 		.4byte	.LVL26
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 102
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 102
 
 
  3694 018d 0100     		.2byte	0x1
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3748 021b 0100     		.2byte	0x1
  3749 021d 56       		.byte	0x56
  3750 021e 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 103
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 103
 
 
  3751 0222 00000000 		.4byte	0
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3805 02ac 0100     		.2byte	0x1
  3806 02ae 50       		.byte	0x50
  3807 02af 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 104
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 104
 
 
  3808 02b3 00000000 		.4byte	0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3862 0332 03       		.byte	0x3
  3863 0333 00000000 		.4byte	.LANCHOR0
  3864 0337 22       		.byte	0x22
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 105
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 105
 
 
  3865 0338 44000000 		.4byte	.LVL86
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3919 03c2 0100     		.2byte	0x1
  3920 03c4 53       		.byte	0x53
  3921 03c5 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 106
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 106
 
 
  3922 03c9 00000000 		.4byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  3976 0457 20000000 		.4byte	.LVL112
  3977 045b 0100     		.2byte	0x1
  3978 045d 52       		.byte	0x52
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 107
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 107
 
 
  3979 045e 20000000 		.4byte	.LVL112
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4033 04e5 0100     		.2byte	0x1
  4034 04e7 50       		.byte	0x50
  4035 04e8 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 108
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 108
 
 
  4036 04ec 00000000 		.4byte	0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4090 0578 0400     		.2byte	0x4
  4091 057a F3       		.byte	0xf3
  4092 057b 01       		.uleb128 0x1
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 109
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 109
 
 
  4093 057c 50       		.byte	0x50
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4147 05f9 50       		.byte	0x50
  4148 05fa 9F       		.byte	0x9f
  4149 05fb 00000000 		.4byte	0
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 110
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 110
 
 
  4150 05ff 00000000 		.4byte	0
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4204 0688 00000000 		.4byte	0
  4205              		.section	.debug_aranges,"",%progbits
  4206 0000 E4000000 		.4byte	0xe4
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 111
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 111
 
 
  4207 0004 0200     		.2byte	0x2
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4261 00d0 00000000 		.4byte	.LFB24
  4262 00d4 28000000 		.4byte	.LFE24-.LFB24
  4263 00d8 00000000 		.4byte	.LFB25
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 112
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 112
 
 
  4264 00dc 28000000 		.4byte	.LFE25-.LFB25
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4318 00c4 28000000 		.4byte	.LFE24
  4319 00c8 00000000 		.4byte	.LFB25
  4320 00cc 28000000 		.4byte	.LFE25
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 113
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 113
 
 
  4321 00d0 00000000 		.4byte	0
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4344      6C652041 
  4345              	.LASF29:
  4346 00cd 69646561 		.ascii	"idealOddDecGain\000"
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 114
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 114
 
 
  4346      6C4F6464 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4370      6C6500
  4371              	.LASF96:
  4372 017e 4C464F75 		.ascii	"LFOutADC_theACLK_SetDividerRegister\000"
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 115
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 115
 
 
  4372      74414443 
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4394      00
  4395              	.LASF74:
  4396 025b 75566F6C 		.ascii	"uVolts\000"
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 116
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 116
 
 
  4396      747300
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4416      6500
  4417              	.LASF48:
  4418 0307 4C464F75 		.ascii	"LFOutADC_SetCoherency\000"
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 117
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 117
 
 
  4418      74414443 
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4444 03a4 4C464F75 		.ascii	"LFOutADC_Start\000"
  4444      74414443 
  4444      5F537461 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 118
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 118
 
 
  4444      727400
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4469 0466 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
  4469      20726576 
  4469      6973696F 
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 119
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 119
 
 
  4469      6E203233 
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4494 0551 746D7056 		.ascii	"tmpValue\000"
  4494      616C7565 
  4494      00
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 120
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 120
 
 
  4495              	.LASF65:
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 1
  4516      6447434F 
  4516      5200
  4517              	.LASF66:
-ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccNB4dIb.s 			page 121
+ARM GAS  C:\Users\THOMPS~1\AppData\Local\Temp\ccYuHvE1.s 			page 121
 
 
  4518 0605 4C464F75 		.ascii	"LFOutADC_SetGain\000"

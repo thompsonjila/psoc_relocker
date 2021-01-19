@@ -104,7 +104,7 @@ int main(void) {
       yellowLight_Write(blinkLED);
     }
   }
-  
+
   Serial("Beginning main sequence (calibrating, then attempting to relock).");
   Serial("Switch to Lock to engage relocker or sample the error signal range.");
   for(;;) {
@@ -133,14 +133,14 @@ int main(void) {
         }
         
         /* here are the initial thresholds */
-        // changing /4 to /6... test
+        // changing /4 to /6... etc.
         errMonThreshold = (3*errMonMaximum + errMonMinimum)/4; // for slope: thresh above avg
         errMonThreshold1 = errMonThreshold; // for slope: thresh above avg
         errMonThreshold2 = (errMonMaximum + 3*errMonMinimum)/4; // other slope: thresh below avg
         
-        errMonThreshold = errMonMaximum + (( errMonMinimum - errMonMaximum ) / 8); // for slope: thresh above avg
+        errMonThreshold = errMonMaximum + (( errMonMinimum - errMonMaximum ) / 3); // for slope: thresh above avg
         errMonThreshold1 = errMonThreshold; // for slope: thresh above avg
-        errMonThreshold2 = errMonMinimum - ((errMonMinimum - errMonMaximum ) / 8); // other slope: thresh below avg
+        errMonThreshold2 = errMonMinimum - ((errMonMinimum - errMonMaximum ) / 3); // other slope: thresh below avg
         /* here we are assuming a symmetric error signal. we are assuming a rising slope for the central error signal */
         
       } else {
@@ -156,8 +156,8 @@ int main(void) {
         lockedLFV = LFOutADC_CountsTo_Volts(lockedLFLevel);
         // Set bounds 200mV above/below the in-lock output voltage.
         // test: 300 mV?
-        aboveLFV = lockedLFV + 0.250;
-        belowLFV = lockedLFV - 0.250;
+        aboveLFV = lockedLFV + 0.150;
+        belowLFV = lockedLFV - 0.150;
         // upperLockedLFLevel = lockedLFLevel + DAC150mVLevel;
         // lowerLockedLFLevel = lockedLFLevel - DAC150mVLevel;
         upperLockedLFLevel = LFOutADC_VoltsTo_Counts(aboveLFV);
@@ -196,9 +196,9 @@ int main(void) {
     
     if ((LFOutputMeas < upperLockedLFLevel) || (LFOutputMeas > lowerLockedLFLevel)) {
       if(blockLockPin_Read() == 1) { // loop here until blockLock TTL is low
-        sprintf(serialBuffer, "Detected dropped lock (%.3fV). Waiting for Block Lock TTL low before relocking...",
-          LFOutADC_CountsTo_Volts(LFOutputMeas)); 
-          Serial(serialBuffer);
+   //     sprintf(serialBuffer, "Detected dropped lock (%.3fV). Waiting for Block Lock TTL low before relocking...",
+    //      LFOutADC_CountsTo_Volts(LFOutputMeas)); 
+   //       Serial(serialBuffer);
         while(blockLockPin_Read() == 1) {
           if(counterLED >= 300000) { // nice counter trick to make about 2Hz blinking
             counterLED = 0;
@@ -207,9 +207,9 @@ int main(void) {
           counterLED++;
         }
       } else {
-        sprintf(serialBuffer, "Detected dropped lock (%.3fV). Block Lock TTL is low so I'm relocking now.",
-          LFOutADC_CountsTo_Volts(LFOutputMeas)); 
-        Serial(serialBuffer);
+   //     sprintf(serialBuffer, "Detected dropped lock (%.3fV). Block Lock TTL is low so I'm relocking now.",
+   //       LFOutADC_CountsTo_Volts(LFOutputMeas)); 
+  //      Serial(serialBuffer);
       }
       
       greenLight_Write(0);
@@ -237,8 +237,19 @@ int main(void) {
       //  CyDelay(1);
         
         (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
-        int16 errorMonitorADC = errMonADC_GetResult16();
+        // int16 errorMonitorADC = errMonADC_GetResult16();
+        int16 testV1 = errMonADC_GetResult16();
         
+        (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
+        int16 testV2 = errMonADC_GetResult16();
+        (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
+        int16 testV3 = errMonADC_GetResult16();
+        (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
+        int16 testV4 = errMonADC_GetResult16();
+        (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
+        int16 testV5 = errMonADC_GetResult16();
+        
+        int32 errorMonitorADC = (testV1 + testV2 + testV3 + testV4 + testV5) / 5;
         logErrMon[logErrMonCounter] = errorMonitorADC;
         
        // for current sweep direction, only need to know about threshold 1...
@@ -251,27 +262,24 @@ int main(void) {
           sweptPastThresh = false; // record if error signal has crossed threshold once
           // errorMonitorInRange = true; // error signal has entered back into the linear region
           //tempTrigger_Write(1); // temporary
-          
+      
+       // sweepV=sweepV+100;
+      //coarseDAC_SetValue((0xff00 & sweepV) >> 8); // set coarseDAC sweep voltage
+      //fineDAC_SetValue(0x00ff & sweepV);          // add in fineDAC voltage with circuitry
+       // CyDelayUs(20);  
+    
           break; // attempt a relock!
         }
         
         if (sweepV >= lowerDACSweepLevel) { // end of sweep, retry sweep
           
-        // (void)errMonADC_IsEndConversion(errMonADC_WAIT_FOR_RESULT);
-        // int16 err1 = errMonADC_GetResult16();
-        // float V1 = errMonADC_CountsTo_Volts(err1);
-        // sprintf(serialBuffer, "--> Err monitor: [%d]=[%.3fV];", err1, V1); 
-        // Serial(serialBuffer);
-        // (void)LFOutADC_IsEndConversion(LFOutADC_WAIT_FOR_RESULT);
-        // int32 err2 = LFOutADC_GetResult32(); // re-measure LF output
-        // float V2 = LFOutADC_CountsTo_Volts(err2);
-        // sprintf(serialBuffer, "--> LF monitor: [%ld]=[%.3fV];", err2, V2); 
-        // Serial(serialBuffer);
-        
           logErrMonCounter = 0;
           sweepV = upperDACSweepLevel;
           coarseDAC_SetValue((0xff00 & sweepV) >> 8); // set coarseDAC sweep voltage
           fineDAC_SetValue(0x00ff & sweepV);          // add in fineDAC voltage with circuitry
+          
+          CyDelayUs(10); //Delay ? after each sweep
+        
           sweptPastThresh = false;
           lockFails++;
       //  sprintf(serialBuffer, "FAIL."); 
@@ -284,25 +292,27 @@ int main(void) {
           }
         }
         
-        CyDelayUs(SWEEP_DELAY_US); // slow down sweep slightly (see plot in manual)
+       //  CyDelayUs(SWEEP_DELAY_US); // slow down sweep slightly (see plot in manual)
         logErrMonCounter++;
         if (logErrMonCounter > 255) {
           logErrMonCounter = 0;
+          sweptPastThresh = false;
         }
         sweepV++; // increase or decrease sweep voltage and try again
+        
       }
       
       (void)LFOutADC_IsEndConversion(LFOutADC_WAIT_FOR_RESULT);
       LFOutputMeas = LFOutADC_GetResult32(); // re-measure LF output
-    //  sprintf(serialBuffer, "Broke free! %ld=%0.3f is in range of [%ld, %ld]?", LFOutputMeas,
-    //    LFOutADC_CountsTo_Volts(LFOutputMeas), lowerLockedLFLevel, upperLockedLFLevel); 
-    //  Serial(serialBuffer);
+      // sprintf(serialBuffer, "Broke free! %ld=%0.3f is in range of [%ld, %ld]?", LFOutputMeas,
+      //  LFOutADC_CountsTo_Volts(LFOutputMeas), lowerLockedLFLevel, upperLockedLFLevel); 
+      // Serial(serialBuffer);
     }
   
     if (debugDropDetected) {
       // Loop filter has returned to central region; switch back into conventional mode now
       debugDropDetected = false;
-      sprintf(serialBuffer, "Relock successful! LF Output at %0.3f V.", LFOutADC_CountsTo_Volts(LFOutputMeas));
+      sprintf(serialBuffer, "Relock #%d successful! LF Output at %0.3f V.", lockFails, LFOutADC_CountsTo_Volts(LFOutputMeas));
       Serial(serialBuffer);
       if (boolLogErrMon) {
         SendDataArray(logErrMon, sizeof(logErrMon) / sizeof(logErrMon[0]), logErrMonCounter, errMonThreshold1, errMonThreshold2);

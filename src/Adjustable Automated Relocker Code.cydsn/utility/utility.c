@@ -35,8 +35,8 @@ void setupFreeSoc(bool TEST_VOLTAGE_MODE, int *LFRange, int *DAC150mVLevel, int 
   char8 serialBuffer[255];       // allocate space for serial messages
   int blinkLED = 1;
   
-  errMonADC_SetGain(-3832);
-  errMonADC_SetOffset(2032); // calibrated 10/19/2018
+  errMonADC_SetGain(-3830); // 3832
+  errMonADC_SetOffset(2006); // 2038 calibrated 10/19/2018
   while(true) {
     int LFsettings = 0;
     if (setting28V_Read() == 1) { // find selected loop-filter model AND set scales
@@ -59,11 +59,11 @@ void setupFreeSoc(bool TEST_VOLTAGE_MODE, int *LFRange, int *DAC150mVLevel, int 
       LFsettings++;
     } if (setting8V_Read() == 1) {
       *LFRange = 8;
-      LFOutADC_SetOffset(27860);
-      LFOutADC_SetGain(-6595);
+      LFOutADC_SetOffset(27715);
+      LFOutADC_SetGain(-6745);
       *DAC150mVLevel = 1229;
-      *DACOffset = 450;
-      *DACRange = 7.636774;
+      *DACOffset = 780; // 450
+      *DACRange = 7.846774; // 7.636774
       Serial("Running in '8V Loop Filter' mode.");
       LFsettings++;
     }
@@ -83,11 +83,9 @@ void setupFreeSoc(bool TEST_VOLTAGE_MODE, int *LFRange, int *DAC150mVLevel, int 
       }
     }
     
-    int32 sweepV = DAC_VoltsTo_Counts(1.0, *DACRange, *DACOffset);
-    coarseDAC_SetValue((0xff00 & sweepV) >> 8); // set coarseDAC sweep voltage
-    fineDAC_SetValue(0x00ff & sweepV);          // add in fineDAC voltage with circuitry
-        
-        
+    
+    int32 sweepV = DAC_VoltsTo_Counts(0.5, *DACRange, *DACOffset);
+    
     if (!TEST_VOLTAGE_MODE) { // we're not testing? Okay, get back to work
       break;
     }
@@ -120,16 +118,17 @@ void setupFreeSoc(bool TEST_VOLTAGE_MODE, int *LFRange, int *DAC150mVLevel, int 
         sweepV, sweepStop);
       Serial(serialBuffer);
     }
-    while(sweepV >= sweepStop) {
+    
+    // set while loop to false for constant voltage output of channel A
+    while(true && sweepV >= sweepStop) {
       fineDAC_SetValue(0x00ff & sweepV);
       coarseDAC_SetValue((0xff00 & sweepV) >> 8);
       sweepV -= 1;
     }
     
     sweepV = DAC_VoltsTo_Counts(1.0, *DACRange, *DACOffset);
-
-    //coarseDAC_SetValue((0xff00 & sweepV) >> 8);
-    //fineDAC_SetValue(0x00ff & sweepV);
+    coarseDAC_SetValue((0xff00 & sweepV) >> 8);
+    fineDAC_SetValue(0x00ff & sweepV);
    // CyDelay(250);
   }
   
